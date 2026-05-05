@@ -64,16 +64,17 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        serif: ['Cormorant Garamond', 'serif'],
-        sans: ['Inter', 'sans-serif'],
+        serif: ['DM Serif Display', 'serif'],
+        sans: ['Plus Jakarta Sans', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-gold': 'var(--gradient-gold)',
+        'gradient-navy': 'var(--gradient-navy)',
         'gradient-hero': 'var(--gradient-hero)',
-        'gradient-radial': 'var(--gradient-radial)',
       },
       boxShadow: {
-        'elegant': 'var(--shadow-elegant)',
+        'card': 'var(--shadow-card)',
+        'card-hover': 'var(--shadow-card-hover)',
         'gold': 'var(--shadow-gold)',
       },
       keyframes: {
