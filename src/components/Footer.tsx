@@ -52,7 +52,8 @@ export const Footer = () => (
           </div>
           <div className="mt-6 space-y-2 text-xs text-white/60">
             <div className="flex items-center gap-2"><Mail className="h-3.5 w-3.5 text-[hsl(var(--gold))]" /> info@ykcandcompany.com</div>
-            <div className="flex items-center gap-2"><Phone className="h-3.5 w-3.5 text-[hsl(var(--gold))]" /> +91 8291494160</div>
+            <div className="flex items-center gap-2"><Phone className="h-3.5 w-3.5 text-[hsl(var(--gold))]" /> Mumbai: +91 9172737370</div>
+            <div className="flex items-center gap-2"><Phone className="h-3.5 w-3.5 text-[hsl(var(--gold))]" /> Ahmedabad: +91 8291494160</div>
             <div className="flex items-start gap-2"><MapPin className="mt-0.5 h-3.5 w-3.5 text-[hsl(var(--gold))]" /> Mumbai · Ahmedabad</div>
           </div>
         </div>

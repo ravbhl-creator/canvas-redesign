@@ -58,7 +58,7 @@ const Contact = () => (
                 <li className="flex items-start gap-3"><MapPin className="mt-0.5 h-5 w-5 text-[hsl(var(--gold))]" /><span className="text-[hsl(var(--navy))]/85">{o.address}</span></li>
                 <li className="flex items-start gap-3"><Phone className="mt-0.5 h-5 w-5 text-[hsl(var(--gold))]" /><a href={`tel:${o.phone.replace(/ /g,"")}`} className="text-[hsl(var(--navy))]/85 hover:text-[hsl(var(--gold))]">{o.phone}</a></li>
                 <li className="flex items-start gap-3"><Mail className="mt-0.5 h-5 w-5 text-[hsl(var(--gold))]" /><a href={`mailto:${o.email}`} className="text-[hsl(var(--navy))]/85 hover:text-[hsl(var(--gold))]">{o.email}</a></li>
-                <li className="flex items-start gap-3"><MessageCircle className="mt-0.5 h-5 w-5 text-[hsl(var(--gold))]" /><a href="https://wa.me/919999999999" className="text-[hsl(var(--navy))]/85 hover:text-[hsl(var(--gold))]">WhatsApp: +91 99999 99999</a></li>
+                <li className="flex items-start gap-3"><MessageCircle className="mt-0.5 h-5 w-5 text-[hsl(var(--gold))]" /><a href="https://wa.me/918291494160" className="text-[hsl(var(--navy))]/85 hover:text-[hsl(var(--gold))]">WhatsApp: +91 8291494160</a></li>
               </ul>
             </article>
           ))}
