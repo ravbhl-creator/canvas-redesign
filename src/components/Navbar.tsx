@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { ChevronDown, Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
+import caLogo from "@/assets/ca-logo.png";
 
 const services = [
   { to: "/services/gst", label: "GST Compliance" },
@@ -41,7 +42,7 @@ export const Navbar = () => {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-xl">
       <div className="container-px flex h-[72px] items-center justify-between">
         <Link to="/" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-navy font-serif text-xl text-[hsl(var(--gold))]">Y</div>
+          <img src={caLogo} alt="YKC & Company CA Logo" className="h-11 w-11 object-contain" />
           <div className="leading-tight">
             <div className="font-serif text-lg text-[hsl(var(--navy))]">YKC <span className="gold-text">& Company</span></div>
             <div className="text-[10px] font-medium uppercase tracking-[0.2em] text-muted-foreground">Chartered Accountants</div>

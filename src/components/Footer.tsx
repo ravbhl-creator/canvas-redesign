@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import caLogo from "@/assets/ca-logo.png";
 
 export const Footer = () => (
   <footer className="bg-gradient-navy text-white/80">
@@ -7,7 +8,7 @@ export const Footer = () => (
       <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <Link to="/" className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-[hsl(var(--gold))]/40 font-serif text-2xl text-[hsl(var(--gold))]">Y</div>
+            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white p-1"><img src={caLogo} alt="YKC & Company CA Logo" className="h-full w-full object-contain" /></div>
             <div className="leading-tight">
               <div className="font-serif text-xl text-white">YKC <span className="gold-text">& Company</span></div>
               <div className="text-[10px] uppercase tracking-[0.22em] text-white/50">Chartered Accountants</div>
@@ -51,7 +52,7 @@ export const Footer = () => (
             <a href="https://x.com/ykcandcompany" aria-label="X" className="rounded-lg border border-white/15 p-2 hover:border-[hsl(var(--gold))] hover:text-[hsl(var(--gold))]"><Twitter className="h-4 w-4" /></a>
           </div>
           <div className="mt-6 space-y-2 text-xs text-white/60">
-            <div className="flex items-center gap-2"><Mail className="h-3.5 w-3.5 text-[hsl(var(--gold))]" /> info@ykcandcompany.com</div>
+            <div className="flex items-center gap-2"><Mail className="h-3.5 w-3.5 text-[hsl(var(--gold))]" /> caanilkabra@gmail.com</div>
             <div className="flex items-center gap-2"><Phone className="h-3.5 w-3.5 text-[hsl(var(--gold))]" /> Mumbai: +91 9172737370</div>
             <div className="flex items-center gap-2"><Phone className="h-3.5 w-3.5 text-[hsl(var(--gold))]" /> Ahmedabad: +91 8291494160</div>
             <div className="flex items-start gap-2"><MapPin className="mt-0.5 h-3.5 w-3.5 text-[hsl(var(--gold))]" /> Mumbai · Ahmedabad</div>
