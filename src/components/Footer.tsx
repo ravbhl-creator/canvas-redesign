@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import caLogo from "@/assets/ca-logo.png";
 
 export const Footer = () => (
   <footer className="bg-gradient-navy text-white/80">
