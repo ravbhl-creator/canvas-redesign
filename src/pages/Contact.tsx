@@ -7,15 +7,15 @@ import { PageHero } from "@/components/PageHero";
 const offices = [
   {
     city: "Mumbai (Head Office)",
-    address: "Mira Road (East), Thane District, Maharashtra — 401107",
-    phone: "+91 99999 99999",
-    email: "info@ykcandcompany.com",
+    address: "4th Floor 421 Meadows Sahar Plaza Complex, JB Nagar Metro Andheri (East),Maharashtra — 400059",
+    phone: "+91 9172737370",
+    email: "caanilkabra@gmail.com",
   },
   {
     city: "Ahmedabad",
     address: "12th Floor, 1209, Addore Aspire, Gulbai Tekra Road, Ahmedabad — 380015",
-    phone: "+91 99999 99998",
-    email: "ca@ykcandcompany.com",
+    phone: "+91 8291494160",
+    email: "caravikabra01@gmail.com",
   },
 ];
 
