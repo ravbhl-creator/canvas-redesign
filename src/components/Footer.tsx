@@ -8,7 +8,7 @@ export const Footer = () => (
       <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <Link to="/" className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-[hsl(var(--gold))]/40 font-serif text-2xl text-[hsl(var(--gold))]">Y</div>
+            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white p-1"><img src={caLogo} alt="YKC & Company CA Logo" className="h-full w-full object-contain" /></div>
             <div className="leading-tight">
               <div className="font-serif text-xl text-white">YKC <span className="gold-text">& Company</span></div>
               <div className="text-[10px] uppercase tracking-[0.22em] text-white/50">Chartered Accountants</div>
