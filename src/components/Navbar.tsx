@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { ChevronDown, Menu, X, Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
+import caLogo from "@/assets/ca-logo.png";
 
 const services = [
   { to: "/services/gst", label: "GST Compliance" },
