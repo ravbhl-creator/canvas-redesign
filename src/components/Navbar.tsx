@@ -57,8 +57,8 @@ export const Navbar = () => {
           <NavLink to="/contact" className={({isActive}) => cn("text-sm font-medium hover:text-[hsl(var(--gold))]", isActive ? "text-[hsl(var(--gold))]" : "text-[hsl(var(--navy))]")}>Contact</NavLink>
         </nav>
         <div className="flex items-center gap-3">
-          <a href="tel:+919999999999" className="hidden items-center gap-2 text-sm font-semibold text-[hsl(var(--navy))] md:flex">
-            <Phone className="h-4 w-4 text-[hsl(var(--gold))]" /> +91 99999 99999
+          <a href="tel:+918291494160" className="hidden items-center gap-2 text-sm font-semibold text-[hsl(var(--navy))] md:flex">
+            <Phone className="h-4 w-4 text-[hsl(var(--gold))]" /> +91 8291494160
           </a>
           <Link to="/contact" className="hidden rounded-full bg-gradient-gold px-5 py-2.5 text-sm font-semibold text-[hsl(var(--navy))] shadow-gold md:inline-flex">Book Consultation</Link>
           <button className="lg:hidden" onClick={() => setOpen(!open)} aria-label="Menu">
