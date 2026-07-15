@@ -87,7 +87,6 @@ const TaxFiling = () => {
               { id: "calc", label: "Tax Calculator", icon: Calculator },
               { id: "upload", label: "Upload Form 16", icon: Upload },
               { id: "docs", label: "Documents Checklist", icon: FileText },
-              { id: "plans", label: "Filing Plans", icon: Star },
             ].map(t => (
               <button key={t.id} onClick={() => setTab(t.id as typeof tab)} className={`flex flex-1 items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold transition-all ${tab===t.id ? "bg-gradient-navy text-white" : "text-[hsl(var(--navy))] hover:bg-secondary"}`}>
                 <t.icon className="h-4 w-4" /> <span className="hidden sm:inline">{t.label}</span>
