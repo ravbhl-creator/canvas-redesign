@@ -56,11 +56,6 @@ const TaxFiling = () => {
   const salariedDocs = ["PAN Card", "Aadhaar Card", "Form 16 from employer", "Form 26AS / AIS", "Bank account details", "Salary slips", "Investment proofs (80C/80D)", "Home loan interest certificate", "Rent receipts (HRA)", "Capital gains statements", "Other income proofs"];
   const businessDocs = ["PAN & Aadhaar", "GST registration & returns", "Books of accounts (Tally/Zoho)", "Bank statements (all accounts)", "Sales & purchase ledgers", "Asset register & depreciation", "TDS certificates", "Loan account statements", "Audit report (if applicable)", "Stock statement", "Previous year ITR & balance sheet"];
 
-  const plans = [
-    { name: "Basic", price: "₹499", popular: false, desc: "For salaried individuals with single Form 16", features: ["Single Form 16","No capital gains","One bank account","Email support","48-hour filing"] },
-    { name: "Pro", price: "₹1,499", popular: true, desc: "Multiple incomes, capital gains, HRA", features: ["Multiple Form 16s","Capital gains (shares/MF)","HRA & home loan","Phone + email support","Regime optimisation","48-hour filing"] },
-    { name: "Business", price: "₹4,999", popular: false, desc: "For business owners & professionals", features: ["ITR-3 / ITR-4","P&L & Balance Sheet","Dedicated CA","Audit coordination","Tax planning call","Priority filing"] },
-  ];
 
   const fmt = (n: number) => "₹" + Math.round(n).toLocaleString("en-IN");
 
@@ -182,24 +177,6 @@ const TaxFiling = () => {
             </div>
           )}
 
-          {tab === "plans" && (
-            <div className="grid gap-6 lg:grid-cols-3">
-              {plans.map(p => (
-                <div key={p.name} className={`relative rounded-3xl border p-8 ${p.popular ? "border-[hsl(var(--gold))] bg-gradient-navy text-white shadow-card-hover" : "border-border bg-card"}`}>
-                  {p.popular && <div className="absolute -top-3 left-8 rounded-full bg-gradient-gold px-4 py-1 text-xs font-bold text-[hsl(var(--navy))]">Most Popular</div>}
-                  <h3 className={`font-serif text-2xl ${p.popular ? "text-white" : "text-[hsl(var(--navy))]"}`}>{p.name}</h3>
-                  <div className={`mt-3 font-serif text-5xl ${p.popular ? "text-[hsl(var(--gold))]" : "text-[hsl(var(--navy))]"}`}>{p.price}</div>
-                  <p className={`mt-3 text-sm ${p.popular ? "text-white/70" : "text-muted-foreground"}`}>{p.desc}</p>
-                  <ul className={`mt-6 space-y-3 text-sm ${p.popular ? "text-white/90" : "text-[hsl(var(--navy))]/85"}`}>
-                    {p.features.map(f => (
-                      <li key={f} className="flex items-start gap-3"><CheckCircle2 className="mt-0.5 h-4 w-4 text-[hsl(var(--gold))]" />{f}</li>
-                    ))}
-                  </ul>
-                  <button onClick={() => { setTab("upload"); toast.success(`${p.name} plan selected`); }} className={`mt-7 w-full rounded-full px-6 py-3 text-sm font-semibold transition-all ${p.popular ? "bg-gradient-gold text-[hsl(var(--navy))]" : "border border-[hsl(var(--navy))] text-[hsl(var(--navy))] hover:bg-[hsl(var(--navy))] hover:text-white"}`}>Select {p.name}</button>
-                </div>
-              ))}
-            </div>
-          )}
         </div>
       </section>
     </>
