@@ -27,7 +27,7 @@ const computeTax = (taxable: number, regime: Regime): number => {
 };
 
 const TaxFiling = () => {
-  const [tab, setTab] = useState<"calc"|"upload"|"docs"|"plans">("calc");
+  const [tab, setTab] = useState<"calc"|"upload"|"docs">("calc");
 
   // Calculator state
   const [regime, setRegime] = useState<Regime>("new");
