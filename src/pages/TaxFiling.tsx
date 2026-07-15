@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Calculator, CheckCircle2, FileText, Star, Upload } from "lucide-react";
+import { Calculator, CheckCircle2, FileText, Upload } from "lucide-react";
 import { toast } from "sonner";
 import { SEO } from "@/components/SEO";
 import { PageHero } from "@/components/PageHero";
